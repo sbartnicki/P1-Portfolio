@@ -1,2 +1,2 @@
 # P1-Wizytowka
-CodersCamp - Projekt 1
+Pierwszy projekt wykonany podczas CodersCamp.
