@@ -14,11 +14,6 @@
     padding: 0px;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     margin: 0;
     background-color: var(--background-color-two);
@@ -126,7 +121,8 @@ button:hover {
 }
 
 .wrapper {
-    width: 100%;
+    min-width: 300px;
+    width: auto !important;
     max-width: 90rem;
     margin: 0 auto;
     background-color: var(--background-color);
@@ -248,6 +244,7 @@ nav a {
 
 .selfphoto img {
     border-radius: 50%;
+    height: auto;
 }
 
 .info p {
@@ -332,16 +329,16 @@ figure figcaption {
     line-height: 170%;
 }
 
-.cleft > div:first-of-type {
+.cleft>div:first-of-type {
     padding: 1.5rem 3.5rem 0 3.5rem;
 }
 
-.cleft > div:last-of-type {
+.cleft>div:last-of-type {
     padding: 0 3.5rem 2rem 3.5rem;
     font-family: var(--Ubuntu);
 }
 
-.cleft > div:last-of-type h1 {
+.cleft>div:last-of-type h1 {
     font-size: 1.125rem;
     font-weight: bold;
 }
@@ -494,30 +491,303 @@ footer p {
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    .portfolio_items {
+@media only screen and (max-width: 460px) {
+    .cover h1 {
+        font-size: 10vw;
+    }
+
+    .topHeader .inner div:last-of-type {
+        display: none;
+    }
+
+    button {
+        height: 2rem;
+        width: 6rem;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .buttonsmall {
+        width: 3rem;
+    }
+
+    .undercover {
+        margin-bottom: 3rem;
+    }
+
+    .inner_box {
         flex-direction: column;
     }
 
-    /*     .first {
-        width: 100%;
+    .info p {
+        font-size: 0.75rem;
+        text-align: center;
+        border-right: none;
     }
+
+    .info p:first-of-type {
+        border-top: 0.25rem dotted var(--text-color2);
+        padding-top: 3rem;
+    }
+
+    .info {
+        padding: 1rem;
+    }
+
+    .cright input,
+    .cright textarea {
+        font-size: 0.75rem;
+    }
+
+    .about_shadow h1 {
+        font-size: 1.5rem;
+        padding-left: 50%;
+    }
+
+    .skills_shadow h1 {
+        font-size: 1.5rem;
+        padding-right: 50%;
+    }
+
+    .skills {
+        margin-bottom: 7rem;
+    }
+
+    .skills .inner_box div {
+        padding: 1rem;
+        border-top: 0.25rem dotted var(--text-color2);
+        border-left: none;
+    }
+
+    div figure {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .skills .inner_box div p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    figure img {
+        width: 50%;
+        height: auto;
+    }
+
+    .skills .inner_box div:first-of-type {
+        border-top: none;
+    }
+
+    .about_me {
+        margin-bottom: 9rem;
+    }
+
+    .text {
+        display: none;
+    }
+
     .second {
-        width: 100%;
+        grid-column: 1 / span 11;
     }
-    .third {
-        width: 100%;
-    }
-    .fourth {
-        width: 100%;
-    }
+
     .fifth {
+        grid-column: 1 / span 11;
+    }
+
+    .first,
+    .third,
+    .fourth {
+        display: none;
+    }
+
+    .portfolio {
+        height: 34rem;
+    }
+
+    .portfolio_items {
+        height: 28rem;
+    }
+
+    .overlay h1 {
+        font-size: 1.75rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .overlay p {
+        padding-bottom: 1rem;
+    }
+
+    .contact_shadow h1 {
+        font-size: 1.5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .cleft {
+        display: none;
+    }
+
+    .cright {
         width: 100%;
-    } */
+    }
+
+    .cright div h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .cright div button {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+@media only screen and (min-width: 461px) and (max-width: 960px) {
+    .cover h1 {
+        font-size: 10vw;
+    }
+
+    .topHeader .inner div:last-of-type {
+        display: none;
+    }
+
+    .undercover {
+        padding: 1rem;
+    }
+
+    button {
+        height: 2rem;
+        width: 6rem;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .buttonsmall {
+        width: 3rem;
+    }
+
+    .inner_box {
+        flex-direction: column;
+    }
+
+    .info p {
+        border-right: none;
+        text-align: center;
+        min-width: none;
+
+    }
+
+    .info {
+        border-top: 0.25rem dotted var(--text-color2);
+        padding: 1rem;
+    }
+
+    .about_shadow h1 {
+        font-size: 1.5rem;
+        padding-left: 50%;
+    }
+
+    .skills_shadow h1 {
+        font-size: 1.5rem;
+        padding-right: 50%;
+    }
+
+    .skills {
+        margin-bottom: 7rem;
+    }
+
+    .skills .inner_box div {
+        padding: 1rem;
+        border-top: 0.25rem dotted var(--text-color2);
+        border-left: none;
+    }
+
+    div figure {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .skills .inner_box div p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    figure img {
+        width: 50%;
+        height: auto;
+    }
+
+    .skills .inner_box div:first-of-type {
+        border-top: none;
+    }
+
+    .about_me {
+        margin-bottom: 9rem;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .first {
+        grid-column: 1 / span 6;
+    }
+
+    .second {
+        grid-column: 7 / span 5;
+    }
+
+    .fifth {
+        grid-column: 1 / span 11;
+    }
+
+    .third,
+    .fourth {
+        display: none;
+    }
+
+    .portfolio {
+        height: 34rem;
+    }
+
+    .portfolio_items {
+        height: 28rem;
+    }
+
+    .overlay h1 {
+        font-size: 1.75rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .overlay p {
+        padding-bottom: 1rem;
+    }
+
+    .contact_shadow h1 {
+        font-size: 1.5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .cleft {
+        display: none;
+    }
+
+    .cright {
+        width: 100%;
+    }
+
+    .cright div h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .cright div button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {}
