@@ -149,22 +149,8 @@ nav a {
     margin-bottom: 3rem;
 }
 
-.skills {
-    display: grid;
-    grid-template-rows: 4.75rem 1fr 4.75rem;
-    grid-template-columns: repeat(12, 1fr);
-    height: 26.875rem;
-}
-
 .about_shadow {
     grid-area: 1/1/4/9;
-    height: 100%;
-    background-color: var(--shadow);
-}
-
-.skills_shadow {
-    grid-area: 1/5/4/13;
-    height: 100%;
     background-color: var(--shadow);
 }
 
@@ -173,6 +159,18 @@ nav a {
     padding: 1rem 0 1rem 15rem;
     font-size: 2rem;
     font-family: var(--Ubuntu);
+}
+
+.skills {
+    display: grid;
+    grid-template-rows: 4.75rem 1fr 4.75rem;
+    grid-template-columns: repeat(12, 1fr);
+    height: 26.875rem;
+}
+
+.skills_shadow {
+    grid-area: 1/5/4/13;
+    background-color: var(--shadow);
 }
 
 .skills_shadow h1 {
@@ -255,6 +253,96 @@ figure figcaption {
     text-align: center;
 }
 
+.contact {
+    display: grid;
+    grid-template-rows: 4.75rem 1fr 4.75rem;
+    grid-template-columns: repeat(12, 1fr);
+    height: 49rem;
+}
+
+.contact_shadow {
+    grid-area: 1/1/4/13;
+    background-color: var(--shadow);
+}
+
+.contact_shadow h1 {
+    color: var(--text-color-dark);
+    padding: 1rem 0 1rem 9rem;
+    font-size: 2rem;
+    font-family: var(--Ubuntu);
+}
+
+.cleft {
+    width: 45%;
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    line-height: 170%;
+}
+
+.cleft div:first-of-type {
+    padding: 1.5rem 3.5rem 0 3.5rem;
+}
+
+.cleft div:last-of-type {
+    padding: 0 3.5rem 2rem 3.5rem;
+    font-family: var(--Ubuntu);
+}
+
+.cleft div:last-of-type h1 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.cright {
+    width: 55%;
+    height: 100%;
+}
+
+.cright div {
+    height: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.cright div h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.cright div button {
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+.cright input, .cright textarea {
+    border-radius: 1rem;
+    border: none;
+    padding-left: 1.5rem;
+    background-color: var(--shadow);
+    color: #A0A0A0;
+    font-family: var(--Ubuntu);
+    font-weight: normal;
+    height: 3.5rem;
+    font-size: 1.125rem;
+}
+
+textarea {
+    min-height: 180px;
+}
+
+textarea::placeholder {
+    padding-top: 2rem;
+}
+
 .portfolio {
     height: 47.5rem;
     display: grid;
@@ -262,6 +350,7 @@ figure figcaption {
     grid-template-columns: 1fr;
 /*     display: flex;
     flex-wrap: wrap; */
+    margin-bottom: 3rem;
 
 }
 .portfolio > h1 {
