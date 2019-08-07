@@ -1,23 +1,31 @@
 <!DOCTYPE HTML>
 <html lang="pl">
+
 <head>
     <meta charset="utf-8">
     <title>Portfolio page Coders Camp</title>
     <meta name="description" content="Pierwszy projekt przygotowany na Coders Camp">
     <meta name="keywords" keywords="Coders Camp, CSS, HTML, projekt">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Ubuntu:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Ubuntu:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <main>
     <div class="wrapper">
         <header>
             <div class="topHeader">
-                <nav>
-                    <div class="logo">LOGO</div>
-                    <a href="#">About me</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contact</a>
+                <nav class="inner">
+                    <div class="logo">
+                        <img src="photo/logo.png" alt="Logo">
+                        <p>Dev</p>
+                    </div>
+                    <div>
+                        <a href="#about_me">About me</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </nav>
             </div>
             <div>
@@ -30,44 +38,53 @@
                 <img src="photo/coverLayer.jpg" alt="overlay" class="overlayer">
                 <h1>Welcome!</h1>
                 <h2>My name is Sylwester</h2>
+                <div>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
 
             </section>
             <section class="undercover">
                 <h1>I am happy to help you with any problem!</h1>
                 <div class="button-container">
-                <button>Contact me!</button>
-                <button>Check my CV</button>
+                    <button>Contact me!</button>
+                    <button>Check my CV</button>
                 </div>
             </section>
 
-            <section class="about_me">
+            <section class="about_me" id="about_me">
                 <div class="about_shadow">
-                <h1>About me</h1>
+                    <h1>About me</h1>
                 </div>
                 <div class="inner_box">
                     <div class="selfphoto">
-                    <img src="photo/Sylwester_Bartnicki.jpg" alt="My mugshot">
+                        <img src="photo/Sylwester_Bartnicki.jpg" alt="My mugshot">
                     </div>
                     <div class="info">
-                        <p>Full Name: <span>Sylwester Bartnicki</span></p>
-                        <p>Age: <span>30 years</span></p>
-                        <p>Profile: <span>Fullstack</span></p>
-                        <p>Telephone: <span>+48 555 555 555</span></p>
-                        <p>E-mail: <span>sylwester@fakemail.pl</span></p>
+                        <p><strong>Full Name: </strong>Sylwester Bartnicki</p>
+                        <p><strong>Age: </strong>30 years</p>
+                        <p><strong>Profile: </strong>Fullstack</p>
+                        <p><strong>Telephone: </strong>+48 555 555 555</p>
+                        <p><strong>E-mail: </strong>sylwester@fakemail.pl</p>
                     </div>
                     <div class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.
                     </div>
                 </div>
             </section>
 
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="skills_shadow">
                     <h1>Skills</h1>
                 </div>
                 <div class="inner_box">
                     <div>
-                        <figure>                                    <img src="photo/ui.png" alt="UX">
+                        <figure> <img src="photo/ui.png" alt="UX">
                             <figcaption>UX/UI</figcaption>
                         </figure>
                         <p>Figma</p>
@@ -75,14 +92,14 @@
                     <div>
                         <figure>
                             <img src="photo/icon_frontend.png" alt="FronteEnd" class="padding-top">
-                                <figcaption>Front End</figcaption>
+                            <figcaption>Front End</figcaption>
                         </figure>
                         <p>Html, CSS, JavaScript</p>
                     </div>
                     <div>
                         <figure>
-                                <img src="photo/Vector.png" alt="BackEnd">
-                                <figcaption>Back End</figcaption>
+                            <img src="photo/Vector.png" alt="BackEnd">
+                            <figcaption>Back End</figcaption>
                         </figure>
                         <p>PHP, Node.js</p>
                     </div>
@@ -90,74 +107,84 @@
             </section>
 
 
-            <section class="portfolio">
-                        <h1>Portfolio</h1>
-                        <div class="portfolio_items">
-                            <div class="first">
-                                <img src="photo/workAbroad.jpg" alt="Desk with laptop and map on">
-                                <div class="overlay">
-                                    <div class="overlay_text">
-                                        <h1>Design</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <button class="buttonsmall">View</button>
-                                </div>
+            <section class="portfolio" id="portfolio">
+                <h1>Portfolio</h1>
+                <div class="portfolio_items">
+                    <div class="first">
+                        <img src="photo/workAbroad.jpg" alt="Desk with laptop and map on">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h1>Design</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
                             </div>
-                            <div class="second">
-                                    <img src="photo/plantsWall.jpg" alt="Plants on the wall">
-                            </div>
-                            <div class="third">
-                                    <img src="photo/beetrootDish.jpg" alt="Plate with beetroot salad">
-                            </div>
-                            <div class="fourth">
-                                    <img src="photo/chair.jpg" alt="Chair by the window">
-                            </div>
-                            <div class="fifth">
-                                    <img src="photo/couch.jpg" alt="Designer room with couch in the middle">
-                                    <div class="overlay">
-                                        <div class="overlay_text">
-                                            <h1>Design project</h1>
-                                            <p>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
-                                        <button class="buttonsmall">View</button>
-                                    </div>
-                            </div>
+                            <button class="buttonsmall">View</button>
                         </div>
+                    </div>
+                    <div class="second">
+                        <img src="photo/plantsWall.jpg" alt="Plants on the wall">
+                    </div>
+                    <div class="third">
+                        <img src="photo/beetrootDish.jpg" alt="Plate with beetroot salad">
+                    </div>
+                    <div class="fourth">
+                        <img src="photo/chair.jpg" alt="Chair by the window">
+                    </div>
+                    <div class="fifth">
+                        <img src="photo/couch.jpg" alt="Designer room with couch in the middle">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h1>Design project</h1>
+                                <p>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.</p>
+                            </div>
+                            <button class="buttonsmall">View</button>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="contact">
-                    <div class="contact_shadow">
-                        <h1>Contact Us</h1>
-                    </div>
-                    <div class="inner_box">
-                        <div class="cleft">
-                            <div>
-                                <img src="photo/logo_message.png" alt="letter icon">
-                                <p>
-                                    Please describe your question. Send me a message and I will answer you as soon as possible! 
-                                </p>
-                            </div>
-                            <div>
-                                <h1>Designer<br>Poland, Wrocław</h1>
-                                <p>ul. Uliczna 5 55-555<br>+48 555-555-555<br><u>sylwester@fakemail.com</u></p>
-                            </div>
+            <section class="contact" id="contact">
+                <div class="contact_shadow">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="inner_box">
+                    <div class="cleft">
+                        <div>
+                            <img src="photo/logo_message.png" alt="letter icon">
+                            <p>
+                                Please describe your question. Send me a message and I will answer you as soon as
+                                possible!
+                            </p>
                         </div>
-                        <div class="cright">   
-                            <div>
-                                <h1>Let's Start</h1>
-                                <input type="text" placeholder="Name">
-                                <input type="text" placeholder="Your e-mail address">
-                                <input type="text" placeholder="Subject">
-                                <textarea rows="10" placeholder="Message"></textarea>
-                                <button class="buttonsmall">Send</button>
+                        <div>
+                            <div class="socialfooter">
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-github"></a>
+                                <a href="#" class="fa fa-facebook"></a>
                             </div>
+                            <h1>Designer<br>Poland, Wrocław</h1>
+                            <p>ul. Uliczna 5 55-555<br>+48 555-555-555<br><u>sylwester@fakemail.com</u></p>
                         </div>
                     </div>
-                </section>
+                    <div class="cright">
+                        <div>
+                            <h1>Let's Start</h1>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Your e-mail address">
+                            <input type="text" placeholder="Subject">
+                            <textarea rows="10" placeholder="Message"></textarea>
+                            <button class="buttonsmall">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
         <footer>
             <p>Copyrights &copy 2019 CodersCrew</p>
         </footer>
     </div>
-</body>
+    </body>
+
 </html>
