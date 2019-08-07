@@ -25,6 +25,16 @@ a {
     color: var(--text-color);
 }
 
+.wrapper {
+    min-width: 300px;
+    width: auto !important;
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+}
+
+/* baner */
 .cover {
     position: relative;
     background-image: url(../photo/coverPhoto.jpg);
@@ -33,6 +43,7 @@ a {
     height: 36.5625rem;
 }
 
+/* layer na banerze */
 .overlayer {
     position: absolute;
     background-image: url(../photo/coverLayer.jpg);
@@ -59,6 +70,7 @@ a {
     text-align: center;
 }
 
+/* social icons */
 .fa {
     margin: 1rem;
     padding: 8px;
@@ -78,6 +90,7 @@ a {
     text-align: center;
 }
 
+/* wysokosc sekcji pod banerem */
 .undercover {
     height: 13.75rem;
 }
@@ -120,15 +133,7 @@ button:hover {
     margin-left: 3rem;
 }
 
-.wrapper {
-    min-width: 300px;
-    width: auto !important;
-    max-width: 90rem;
-    margin: 0 auto;
-    background-color: var(--background-color);
-    box-sizing: border-box;
-}
-
+/* szerokosc sekcji wewnętrznych */
 .inner {
     width: 100%;
     max-width: 77.5rem;
@@ -246,8 +251,13 @@ nav a {
 }
 
 @keyframes animation1 {
-    0% {transform: rotateY(0deg);}
-    100% {transform: rotateY(360deg);}
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 .selfphoto img {
@@ -325,6 +335,7 @@ figure figcaption {
     font-family: var(--Ubuntu);
 }
 
+/* lewy div formularza */
 .cleft {
     width: 45%;
     height: 100%;
@@ -351,6 +362,7 @@ figure figcaption {
     font-weight: bold;
 }
 
+/* prawy div formularza */
 .cright {
     width: 55%;
     height: 100%;
@@ -439,6 +451,7 @@ textarea::placeholder {
     position: relative;
 }
 
+/* overlay na zdjeciach */
 .overlay {
     position: absolute;
     top: 0px;
@@ -462,6 +475,7 @@ textarea::placeholder {
     padding-bottom: 2rem;
 }
 
+/* uklad zdjec w porfolio */
 .first {
     grid-column: 1 / span 4;
 }
@@ -797,5 +811,5 @@ footer p {
     }
 }
 
-/* Desktop Styles */
+/* Desktop Styles - not used */
 @media only screen and (min-width: 961px) {}
